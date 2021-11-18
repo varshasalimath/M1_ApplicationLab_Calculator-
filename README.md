@@ -44,6 +44,14 @@ This is the Basic calculator which is manufactured by Cisco. Which is used for b
 
 # SWOT ANALYSIS :-
 SWOT Analysis is a simple tool that can help you to analyze what your company does best right now, and to devise a successful strategy for the future. SWOT can also reveal areas of the business that are holding you back, or that your competitors could exploit if you don't protect yourself.
+
+
+
+
+
+
+![2](https://user-images.githubusercontent.com/55504490/142440221-37b2b3d6-c1d8-48e3-8cd4-5daaaf7f4de6.jpg)
+
 ## a) Strengths 
 Strengths are things that your Calculators does particularly well, or in a way that distinguishes you from your competitors
 ## b) Weaknesses
