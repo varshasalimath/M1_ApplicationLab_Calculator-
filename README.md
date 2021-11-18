@@ -7,6 +7,8 @@ A Calculator is a small electronic device used to perform various arithmetic ope
 
 # Research :-
 We use a scientific or sophisticated calculator in some situations, where we need to solve complex calculations like trigonometry functions, exponential operators, degrees, radians, log functions, hyperbolic functions etc
+                                                                           ![1](https://user-images.githubusercontent.com/55504490/142439457-60004097-640d-4a3f-bfc6-be766831b9d1.jpg)
+
 
 # Cost and Features and Timeline :-
 
