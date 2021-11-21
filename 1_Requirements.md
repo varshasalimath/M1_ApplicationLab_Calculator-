@@ -94,10 +94,4 @@ It has to be deployed 25th of November 2021
  | LLR_1_HLR1 | • If we consider + it will integer inputs and produces the float ,array output 	If we consider - it will integer inputs and produces the float ,array output.        
  |LLR_1_HLR1|•	If I consider financial operation it will provide me the appropriate Result|
 
- # Design :-
- ## Structural Diagram 
-        Flow charts
- ![5](https://user-images.githubusercontent.com/55504490/142439093-c0dda21c-3276-4c5d-8ba0-20626f787602.jpg)
-       
-
  
