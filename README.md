@@ -3,10 +3,8 @@
 
 # BADGES
 | Code Quality Score | Code Grade | 
-|--------------------|------------|----------------------------------------
-| ![Code Quality Score](https://api.codiga.io/project/29818/score/svg) | ![Code Grade](https://api.codiga.io/project/29818/status/svg) | [![Contribution Check - Git Inspector](https://github.com/hamsaveni2016/M1_Previous-Project_Library-Mangment/actions/workflows/gitinspector.yml/badge.svg)]
-
-
+|--------------------|------------|
+| ![Code Quality Score](https://api.codiga.io/project/29818/score/svg) | ![Code Grade](https://api.codiga.io/project/29818/status/svg) | 
 
 # **BASIC Calculator**
 A sample C programming code for a real time calculator application program is given below. This program will perform the below calculator operations.
