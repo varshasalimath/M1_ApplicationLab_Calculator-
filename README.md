@@ -2,9 +2,9 @@
  Basic_Calculator 
 
 # BADGES
-| Code Quality Score | Code Grade | [Git Inspector](using github.io option)
+| Code Quality Score | Code Grade | 
 |--------------------|------------|----------------------------------------
-| ![Code Quality Score](https://api.codiga.io/project/29818/score/svg) | ![Code Grade](https://api.codiga.io/project/29818/status/svg) | [![Contribution Check - Git Inspector](https://github.com/hamsaveni2016/M1_Previous-Project_Library-Mangment/actions/workflows/gitinspector.yml/badge.svg)](https://github.com/hamsaveni2016/M1_Previous-Project_Library-Mangment/actions/workflows/gitinspector.yml)
+| ![Code Quality Score](https://api.codiga.io/project/29818/score/svg) | ![Code Grade](https://api.codiga.io/project/29818/status/svg) | [![Contribution Check - Git Inspector](https://github.com/hamsaveni2016/M1_Previous-Project_Library-Mangment/actions/workflows/gitinspector.yml/badge.svg)]
 
 
 
