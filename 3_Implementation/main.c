@@ -1,124 +1,217 @@
+/**
+ * @file main.c
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-07-11
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
-#include <stdio.h>  
-#include <math.h>  
-#include <stdlib.h>  
-  
-int main()  
-{  
-    
-    int op, n1, n2;  
-    float res;  
-    char ch;  
-    do  
-    {  
-         
-        printf (" Select an operation to perform the calculation in C Calculator:\n ");  
-        printf("-----------------------------------------------------------------");
-        printf (" \n 1. Addition  \t \t 2. Subtraction \n 3. Multiplication \t 4. Division \n 5. Square \t \t 6. Square Root \n 7. Exit \n \n Please, Make a choice :- ");      
-          
-        scanf ("%d", &op);  
-      
-      
-     
-    switch (op)  
-    {  
-        case 1:  
-            
-            printf (" You chose: Addition");  
-            printf ("\n Enter First Number: ");  
-            scanf (" %d", &n1);  
-            printf (" Enter Second Number: ");  
-            scanf (" %d", &n2);  
-            res = n1 + n2; 
-            printf("-------------------------------------------\n");  
-            printf ("|  Addition of two numbers is: %.2f  |\n", res);
-            printf("-------------------------------------------\n"); 
-            break; 
-              
-        case 2:  
-              
-            printf (" You chose: Subtraction");  
-            printf ("\n Enter First Number: ");  
-            scanf (" %d", &n1);  
-            printf (" Enter Second Number: ");  
-            scanf (" %d", &n2);  
-            res = n1 - n2; 
-            printf("-------------------------------------------\n");  
-            printf ("|  Subtraction of two numbers is: %.2f  |\n", res);
-            printf("-------------------------------------------\n");   
-            break;   
-              
-        case 3:  
-              
-            printf (" You chose: Multiplication");  
-            printf ("\n Enter First Number: ");  
-            scanf (" %d", &n1);  
-            printf (" Enter Second Number: ");  
-            scanf (" %d", &n2);  
-            res = n1 * n2;  
-            printf("----------------------------------------------\n");  
-            printf ("|  Multiplication of two numbers is: %.2f  |\n", res);
-            printf("----------------------------------------------\n");   
-            break;   
-              
-        case 4:  
-              
-            printf (" You chose: Division");  
-            printf ("\n Enter First Number: ");  
-            scanf (" %d", &n1);  
-            printf (" Enter Second Number: ");  
-            scanf (" %d", &n2);  
-            if (n2 == 0)  
-                {   printf("--------------------------------------------------------\n"); 
-                    printf (" \n|  Divisor cannot be zero. Please enter another value  |\n");  
-                    scanf ("%d", &n2);        
-                    printf("--------------------------------------------------------\n"); 
-                }  
-            res = n1 / n2;  
-            printf("---------------------------------------\n"); 
-            printf("|  Division of two numbers is: %.2f  |\n", res);
-            printf("---------------------------------------\n");  
-            break;   
-              
-        case 5:  
-              
-            printf (" You chose: Square");  
-            printf ("\n Enter the Number: ");  
-            scanf (" %d", &n1);  
-  
-            res = n1 * n1; 
-            printf("---------------------------------\n"); 
-            printf (" | Square of %d number is: %.2f | \n", n1, res);
-            printf("---------------------------------\n");  
-            break;   
-              
-        case 6:  
-             
-            printf (" You chose: Square Root");  
-            printf ("\n Enter the Number: ");  
-            scanf (" %d", &n1);  
-              
-            res = sqrt(n1); 
-            printf("---------------------------------------\n");   
-            printf ("|  Square Root of %d numbers is: %.2f  |\n", n1, res);
-            printf("---------------------------------------\n");  
-            break;
-              
-        case 7:  
-            printf("----------------------------\n");
-            printf ("|  You chose: Exit  |\n");  
-            printf("----------------------------\n");
-            exit(0);   
-            break;  
-              
-        default: 
-            printf("----------------------------\n"); 
-            printf("|   Something is wrong!!   |\n");
-             printf("---------------------------\n");  
-            break;                        
-    }  
-    printf (" \n \n ********************************************** \n ");  
-    } while (op != 7);  
-  
-    return 0;        
+#include"calc.h"
+
+/**
+ * @brief main function of the project
+ * 
+ * @return int 
+ */
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<stdlib.h>
+ 
+#define KEY "Enter the calculator Operation you want to do:"
+ 
+// Function prototype declaration
+void addition();
+void subtraction();
+void multiplication();
+void division();
+void modulus();
+void power();
+int factorial();
+void calculator_operations();
+ 
+// Start of Main Program
+int main()
+{
+    int X=1;
+    char Calc_oprn;
+ 
+    // Function call 
+    calculator_operations();
+ 
+    while(X)
+    {
+        printf("\n");
+        printf("%s : ", KEY);
+ 
+        Calc_oprn=getche();
+ 
+        switch(Calc_oprn)
+        {
+            case '+': addition();
+                      break;
+ 
+            case '-': subtraction();
+                      break;
+ 
+            case '*': multiplication();
+                      break;
+ 
+            case '/': division();
+                      break;
+ 
+            case '?': modulus();
+                      break;
+ 
+            case '!': factorial();
+                      break;
+ 
+            case '^': power();
+                      break;
+ 
+            case 'H':
+            case 'h': calculator_operations();
+                      break;
+ 
+            case 'Q':
+            case 'q': exit(0);
+                      break;
+            case 'c':
+            case 'C': system("cls");
+                      calculator_operations();
+                      break;
+ 
+            default : system("cls");
+ 
+    printf("\n**********You have entered unavailable option");
+    printf("***********\n");
+    printf("\n*****Please Enter any one of below available ");
+    printf("options****\n");
+                      calculator_operations();
+        }
+    }
+}
+ 
+//Function Definitions
+ 
+void calculator_operations()
+{
+    //system("cls");  use system function to clear 
+    //screen instead of clrscr();
+    printf("\n             Welcome to C calculator \n\n");
+ 
+    printf("******* Press 'Q' or 'q' to quit ");
+    printf("the program ********\n");
+    printf("***** Press 'H' or 'h' to display ");
+    printf("below options *****\n\n");
+    printf("Enter 'C' or 'c' to clear the screen and");
+    printf(" display available option \n\n");
+ 
+    printf("Enter + symbol for Addition \n");
+    printf("Enter - symbol for Subtraction \n");
+    printf("Enter * symbol for Multiplication \n");
+    printf("Enter / symbol for Division \n");
+    printf("Enter ? symbol for Modulus\n");
+    printf("Enter ^ symbol for Power \n");
+    printf("Enter ! symbol for Factorial \n\n");
+}
+ 
+void addition()
+{
+    int n, total=0, k=0, number;
+    printf("\nEnter the number of elements you want to add:");
+    scanf("%d",&n);
+    printf("Please enter %d numbers one by one: \n",n);
+    while(k<n)
+    { 
+        scanf("%d",&number);
+        total=total+number;
+        k=k+1;
+    }
+    printf("Sum of %d numbers = %d \n",n,total);
+}
+ 
+void subtraction()
+{ 
+    int a, b, c = 0; 
+    printf("\nPlease enter first number  : "); 
+    scanf("%d", &a); 
+    printf("Please enter second number : "); 
+    scanf("%d", &b); 
+    c = a - b; 
+    printf("\n%d - %d = %d\n", a, b, c); 
+}
+ 
+void multiplication()
+{
+    int a, b, mul=0; 
+    printf("\nPlease enter first numb   : "); 
+    scanf("%d", &a); 
+    printf("Please enter second number: "); 
+    scanf("%d", &b);
+    mul=a*b;
+    printf("\nMultiplication of entered numbers = %d\n",mul);
+}
+ 
+void division()
+{
+    int a, b, d=0; 
+    printf("\nPlease enter first number  : "); 
+    scanf("%d", &a); 
+    printf("Please enter second number : "); 
+    scanf("%d", &b);
+    d=a/b;
+    printf("\nDivision of entered numbers=%d\n",d);
+}
+ 
+void modulus()
+{
+    int a, b, d=0; 
+    printf("\nPlease enter first number   : "); 
+    scanf("%d", &a); 
+    printf("Please enter second number  : "); 
+    scanf("%d", &b);
+    d=a%b;
+    printf("\nModulus of entered numbers = %d\n",d);
+}
+ 
+void power()
+{
+    double a,num, p;
+    printf("\nEnter two numbers to find the power \n");
+    printf("number: ");
+    scanf("%lf",&a);
+ 
+    printf("power : ");
+    scanf("%lf",&num);
+ 
+    p=pow(a,num);
+ 
+    printf("\n%lf to the power %lf = %lf \n",a,num,p);
+}
+ 
+int factorial()
+{
+    int i,fact=1,num;
+ 
+    printf("\nEnter a number to find factorial : ");
+    scanf("%d",&num);
+ 
+    if (num<0)
+    {
+        printf("\nPlease enter a positive number to");
+        printf(" find factorial and try again. \n");
+        printf("\nFactorial can't be found for negative");
+        printf(" values. It can be only positive or 0  \n");
+        return 1;
+    }               
+ 
+    for(i=1;i<=num;i++)
+    fact=fact*i;
+    printf("\n");
+    printf("Factorial of entered number %d is:%d\n",num,fact);
+    return 0;
 }
