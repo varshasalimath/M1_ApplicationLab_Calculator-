@@ -7,37 +7,45 @@ void setUp(){}
 void tearDown(){}
 
 
+void test_calculator_operation(void){
+    TEST_ASSERT_EQUAL(pass,calculator_operation());
+}
+
 void test_addition(void){
-    TEST_ASSERT_EQUAL(pass,addition(125, "Sonika", "Dragon"));
+    TEST_ASSERT_EQUAL(pass,addition());
 }
 
-void test_viewbook(void){
-    TEST_ASSERT_EQUAL(pass,viewbook());
+void test_subtraction(void){
+    TEST_ASSERT_EQUAL(fail,subtraction("f"));
+    TEST_ASSERT_EQUAL(pass,subtraction(125));
 }
 
-void test_searchbook(void){
-    TEST_ASSERT_EQUAL(fail,searchbook(-2));
-    TEST_ASSERT_EQUAL(pass,searchbook(125));
-}
-
-
-
-void test_deletebook(void){
-    TEST_ASSERT_EQUAL(pass,deletebook(125));
+void test_multiplication(void){
+    TEST_ASSERT_EQUAL(pass,multiplication(125*7));
 }        
 
-void test_issuebook(void){
-    TEST_ASSERT_EQUAL(pass,issuebook(125));
+void test_Division(void){
+    TEST_ASSERT_EQUAL(pass,division(125/87));
+}
+
+void test_power(void){
+    TEST_ASSERT_EQUAL(pass,power(2,2));
+}
+
+void test_factorial(void){
+    TEST_ASSERT_EQUAL(pass,factorial(5));
 }
 
 int main(){
     UNITY_BEGIN();
 
+    RUN_TEST(test_calculator_operation);
     RUN_TEST(test_addition);
-    RUN_TEST(test_searchbook);
-    RUN_TEST(test_issuebook);
-    RUN_TEST(test_deletebook);
-    RUN_TEST(test_viewbook);
+    RUN_TEST(test_subtraction);
+    RUN_TEST(test_multiplication);
+    RUN_TEST(test_Division);
+    RUN_TEST(test_power);
+    RUN_TEST(test_factorial);
     
     return UNITY_END();
 }
