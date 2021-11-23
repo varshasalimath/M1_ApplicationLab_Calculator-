@@ -33,7 +33,7 @@ The user is prompted to choose the operations(i.e. addition, subtraction etc)  t
 # ISSUE TRACKING
 |ID|NAME|FEATURES|ISSUES RAISED|ISSUES RESOLVED|TOTAL TESTCASES|TOTAL TESTCASES PASSED|
 |:----|:---|:-------|:------------|:--------------|:--------------|:---------------------|
-|40021067|Pavan v|Basic Calculator|3|3|5|5|
+|40021067|Pavan v|Basic Calculator|1|1|5|5|
 
 # Challenges Faced and How Was It Overcome
 1.I have faced issues in file handling. so, I used strings.
