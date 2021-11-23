@@ -5,22 +5,24 @@
 
 |TEST ID| DESCRIPTION| EXPECTED I/P|
 | :-----|:-----------|:------------|
-|HL01|ADD BOOKS|CATEGORY,BOOKNAME,AUTHOR,QUANTITY,PRICE,RACKNO|
-|HL02|DELETE BOOKS|CATEGORY,ID|
-|HL03|SEARCH BOOK|CATEGORY, ID|
-|HL04|ISSUE BOOK|CATEGORY,ID|
-|HL05|VIEW BOOK|CATEGORY,ID|
+|HL01|Addition|Addition of given number|
+|HL02|Subtraction|Subtraction of given number|
+|HL03|Multiplication|Multiplication of given number|
+|HL04|Division|Division of given two number|
+|HL05|Power|Finding the power value|
+|HL06|Factorial|Finding the Factorial of given number| 
 
 
 # Low level test plan
 
 |TESTID| DESCRIPTION| EXPECTED I\P|
 |:-----|:-----------|:------------|
-|LL01|ADDIND DETAILS OF NEW BOOK|CATEGORY,BOOKNAME,AUTHOR,QUANTITY,PRICE,RACKNO|
-|LL02|DELETING BOOK BY ID&CATEGORY|CATEGORY,ID|
-|LL03|SEARCH FOR THE BOOK BY ENTERING CATEGORY,ID|CATEGORY,ID|
-|LL04|ISSUING BOOK BASED ON ID|CATEGORY,ID|
-|LL05|VIEW BOOK BY ENTERING CATEGORY,ID|CATEGORY,ID|
+|LL01|+|12+1 = 13|
+|LL02|-|67-1 = 66|
+|LL03| * |12 * 2 = 24 |
+|LL04| / |24/2 = 12|
+|LL05|^| 2^2 = 4|
+|LL06| ! |3! = 6|
 
 
 
