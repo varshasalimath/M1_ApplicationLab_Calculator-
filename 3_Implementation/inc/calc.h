@@ -50,7 +50,7 @@ test_values addition();
 /**
  * @brief function to perform subtraction
  * switch(Calc_oprn)
- * @retuen test_values
+ * @return test_values
  */
 
 test_values subtraction();
@@ -58,7 +58,7 @@ test_values subtraction();
 /**
  * @brief function to perform Multiplication
  * switch(Calc_oprn)
- * @retuen test_values
+ * @return test_values
  */
 
 test_values multiplication();
@@ -66,28 +66,28 @@ test_values multiplication();
 /**
  * @brief function to perform Division
  * switch(Calc_oprn)
- * @retuen test_values
+ * @return test_values
  */
 test_values division();
 
 /**
  * @brief function to perform modulus
  * switch(Calc_oprn)
- * @retuen test_values
+ * @return test_values
  */
 
 test_values modulus();
 /**
  * @brief function to perform factorial
  * switch(Calc_oprn)
- * @retuen test_values
+ * @return test_values
  */
 test_values factorial();
 
 /**
  * @brief function to perform power
  * switch(Calc_oprn)
- * @retuen test_values
+ * @return test_values
  */
 
 test_values power();
