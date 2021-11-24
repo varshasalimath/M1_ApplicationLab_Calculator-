@@ -5,9 +5,9 @@
  Basic_Calculator 
 
 # BADGES
-| Code Quality Score | Code Grade | 
-|--------------------|------------|
-| ![Code Quality Score](https://api.codiga.io/project/29818/score/svg) | ![Code Grade](https://api.codiga.io/project/29818/status/svg) | 
+| Code Quality Score | Code Grade | Codacy Badge |
+|--------------------|------------|--------------|
+| ![Code Quality Score](https://api.codiga.io/project/29818/score/svg) | ![Code Grade](https://api.codiga.io/project/29818/status/svg) |[![Codacy Badge](https://api.codacy.com/project/badge/Grade/501d277c37c646ac9e4b18350a2169c6)](https://app.codacy.com/gh/PavanSrinivas851/M1_ApplicationLab_Calculator-?utm_source=github.com&utm_medium=referral&utm_content=PavanSrinivas851/M1_ApplicationLab_Calculator-&utm_campaign=Badge_Grade_Settings)| 
 
 # **BASIC Calculator**
 A sample C programming code for a real time calculator application program is given below. This program will perform the below calculator operations.
