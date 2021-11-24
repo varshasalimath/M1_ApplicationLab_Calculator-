@@ -12,6 +12,18 @@ We use a scientific or sophisticated calculator in some situations, where we nee
 
  ![1](https://user-images.githubusercontent.com/55504490/142439457-60004097-640d-4a3f-bfc6-be766831b9d1.jpg)
                                                                           
+## **BENEFITS:**
+a) Record Maintenance.
+
+b) Web-Based Solution.
+
+c) Saves Time and Cost.
+
+d) Secure and Reliable.
+
+e) Increases Efficiency.
+
+f) Simple and Easy to Use.
 
 
 # Cost and Features and Timeline :-
