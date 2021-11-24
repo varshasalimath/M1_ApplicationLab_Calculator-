@@ -85,11 +85,6 @@ It has to be deployed 25th of November 2021
  # Detail requirements :-
  ## High Level Requirements
 
-
-
-
-
-
  | ID     | Description                |
  | :------- | :------------------------- |
  | HLR1|  It is a basic calculator which support basic operations like (+, -, *, /)                          |
@@ -105,3 +100,14 @@ It has to be deployed 25th of November 2021
  |LLR_1_HLR1|•	If I consider financial operation it will provide me the appropriate Result|
 
  
+ # Challenges Faced and How Was It Overcome
+1.I have faced issues in file handling. so, I used strings.
+
+2.Updating and Deleting a file was overcame by using a temporary file to store data for some time.
+
+# Learning Resources
+1.Tutorials point
+
+2.Geeksforgeeks
+
+3.future skills
