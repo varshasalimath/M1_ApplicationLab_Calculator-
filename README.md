@@ -1,4 +1,7 @@
 # M1_ApplicationLab_Calculator-
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/501d277c37c646ac9e4b18350a2169c6)](https://app.codacy.com/gh/PavanSrinivas851/M1_ApplicationLab_Calculator-?utm_source=github.com&utm_medium=referral&utm_content=PavanSrinivas851/M1_ApplicationLab_Calculator-&utm_campaign=Badge_Grade_Settings)
+
  Basic_Calculator 
 
 # BADGES
